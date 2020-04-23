@@ -15,13 +15,17 @@ class Services extends Component {
             </div>
 
             <div className="row">
-              <div class="card-columns">
+              <div className="card-columns">
                 {this.props.items.map((skill) => (
-                  <div class="card" style={{ width: "18rem" }}>
-                    <div class="card-body">
-                      <h5 class="card-title">{skill.name}</h5>
+                  <div
+                    key={skill.name}
+                    className="card"
+                    style={{ width: "18rem" }}
+                  >
+                    <div className="card-body">
+                      <h5 className="card-title">{skill.name}</h5>
 
-                      <p class="card-text">{skill.description}</p>
+                      <p className="card-text">{skill.description}</p>
                     </div>
                   </div>
                 ))}

@@ -20,8 +20,8 @@ class Experience extends Component {
               <div className="col-lg-8">
                 <div className="row">
                   {this.state.profile.experiences.map((exp) => (
-                    <div className="col-lg-6">
-                      <div key={exp.role} className="about-info mb-5">
+                    <div key={exp.role} className="col-lg-6">
+                      <div className="about-info mb-5">
                         <span>{exp.fromto}</span>
                         <h4 className="mb-3 mt-1">{exp.role}</h4>
                         <p>
@@ -32,7 +32,6 @@ class Experience extends Component {
                       </div>
                     </div>
                   ))}
-                  
                 </div>
               </div>
             </div>
