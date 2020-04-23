@@ -47,7 +47,6 @@ class Skills extends Component {
                         <span className="sr-only">60% Complete</span>
                       </div>
                       <span className="progress-type">{skill.name}</span>
-                      {/* <span className="progress-completed">60%</span> */}
                     </div>
                   ))}
                 </div>

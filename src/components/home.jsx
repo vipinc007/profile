@@ -21,18 +21,8 @@ class Home extends Component {
                 <p className="lead mb-4">{this.state.profile.role}</p>
 
                 <p className="mb-4">{this.state.profile.professionalSummary}</p>
-
-                {/* <img src="images/signature.png" alt="" className="img-fluid" /> */}
               </div>
 
-              {/* <div className="col-lg-5">
-                <ul className="list-unstyled mt-3 mb-5 about-list">
-                  <li>- Web Development</li>
-                  <li>- Full Stack Developer</li>
-                  <li>- Frontend Developer</li>
-                  <li>- Backend Developer</li>
-                </ul>
-              </div> */}
               <Services items={this.state.profile.services} />
             </div>
           </div>
